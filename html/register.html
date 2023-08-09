@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <link rel="stylesheet" href="../css/register.css" />
+ </head>
+
+ <body>
+  <h2>Register User</h2>
+  <form>
+    <table>
+      <tr>
+        <td>
+          <div>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" class="input-element" placeholder="Enter First name"/>
+          </div>
+        </td>
+        <td>
+          <div>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" class="input-element" placeholder="Enter Last Name" />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+              <option value="" disabled selected>Select Your Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+        </td>
+        <td>
+          <div>
+            <label for="dob">Date Of Birth</label>
+            <input type="date" id="dob" name="dob" class="input-element" />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" class="input-element" placeholder="Enter E-mail" />
+          </div>
+        </td>
+        <td>
+          <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" class="input-element" placeholder="Enter Phone Number" />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <div>
+            <label for="address">Address</label>
+            <textarea rows="4" cols="30" name="address" placeholder="Enter Address"></textarea>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <label for="username">Username</label>
+            <input type="text" name="username" class="input-element" placeholder="Enter Username" />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" class="input-element" placeholder="Enter password" />
+          </div>
+        </td>
+        <td>
+          <div>
+            <label for="confirm_pass">Confirm Password</label>
+            <input type="password" class="input-element" name="password" />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div>
+            <input type="checkbox" name="checkbox" value="checkbox" />
+            <label for="checkbox">I have read the agreement</label>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button type="submit">Submit</button>
+        </td>
+      </tr>
+    </table>   
+  </form>  
+ </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<style>
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=tel], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  textarea, select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+
+  input[type=submit] {
+    width: 100%;
+    background-color: blue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+</style>
+ 
+<body>
+
+<h1>Inquiry</h1>
+
+<form id="inquiry">
+  <input type="text" id="company_name" name="company_name" placeholder="Company name" size="79" required><br><br>
+  <input type="text" id="name" name="name" placeholder="Name" size="79" required><br><br>
+  <input type="email" id="email" name="email" placeholder="Mail address" size="79" required><br><br>
+  <input type="tel" id="phone" name="phone" placeholder="Telephone number" size="79" required><br><br>
+  <textarea rows="4" cols="50" name="content" form="inquiry" placeholder="Content of inquiry" required></textarea><br><br>
+  <input type="submit" value="Send">
+</form>
+
+</body>
+</html>

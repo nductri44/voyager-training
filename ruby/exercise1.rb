@@ -1,8 +1,8 @@
-puts "enter a:"
+puts "enter a"
 a = gets.chomp.to_i
-puts "enter b:"
+puts "enter b"
 b = gets.chomp.to_i
-puts "choose method:"
+puts "choose method"
 method = gets.chomp
 
 case method

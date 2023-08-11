@@ -13,5 +13,11 @@ when "-"
 when "*"
   puts "Answer: #{a * b}"
 when "/"
-  puts "Answer: #{a / b}"
+  if b < 0
+    puts "Khong the chia cho so nho hon 0"
+  elsif b == 0
+    puts "Khong the chia cho so 0"
+  else
+    puts "Answer: #{a / b}"
+  end
 end

@@ -2,7 +2,7 @@ puts "1. Dien tich tam giac"
 puts "2. Dien tich hinh tron"
 puts "3. Dien tich hinh chu nhat"
 
-puts "Lua chon"
+puts "Lua chon:"
 op = gets.chomp
 
 case op

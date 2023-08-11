@@ -7,7 +7,7 @@ op = gets.chomp
 
 case op
 when "1"
-    puts "Tinh dien tich tam giac:"
+    puts "Tinh dien tich tam giac::"
     puts "Nhap chieu cao:"
     a = gets.chomp.to_f
     puts "Nhap canh day:"

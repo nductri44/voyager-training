@@ -8,7 +8,7 @@ method = gets.chomp
 
 case method
 when "+"
-  puts "Answer: #{a + b}"
+  puts "Answer:: #{a + b}"
 when "-"
   puts "Answer: #{a - b}"
 when "*"

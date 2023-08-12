@@ -4,9 +4,9 @@ def main()
   puts "3. Dien tich hinh chu nhat"
 
   puts "Lua chon:"
-  op = gets.chomp
+  option = gets.chomp
 
-  case op
+  case option
   when "1"
     HinhTamGiac()
   when "2"

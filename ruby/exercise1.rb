@@ -5,9 +5,9 @@ def main()
   puts "3. Nhân"
   puts "4. Chia"
   
-  method = gets.chomp
+  option = gets.chomp
 
-  case method
+  case option
   when "1"
     PhepCong()
   when "2"

@@ -22,15 +22,20 @@ attr_accessor :id, :name, :balance
   end
 
   def display(id, name)
-  
+    if (@id == id) && (@name == name)
+      puts @balance
+    else
+      "Invalid input"
+    end
   end
 
-  def findAccount()
-
-  end
-
-  def updateName()
-
+  def update_name(id, old_name, new_name)
+    if (@id == id) && (@name == name)
+      @name = new_name
+      puts @balance
+    else
+      puts "Invalid input"
+    end
   end
 
 end

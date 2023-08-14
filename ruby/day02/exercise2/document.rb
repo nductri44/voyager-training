@@ -12,7 +12,7 @@ class Document
     price * rent_hour
   end
 
-  def print_info
+  def print
     puts "#{id}"
     puts "#{publisher}"
     puts "#{release}"

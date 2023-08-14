@@ -13,7 +13,7 @@ class Book < Document
     super
   end
 
-  def print_info
+  def print
     super
     puts "#{author}"
     puts "#{page}"

@@ -10,13 +10,13 @@ newspaper_1 = Newspaper.new("3", "Tuoi Tre", "10000", 1000, "14")
 
 $documents = [document_1, book_1, magazine_1, newspaper_1]
 
-def display
+def display_doc
   $documents.each do |doc|
-    puts doc.print_info
+    puts doc.print
   end
 end
 
-display()
+display_doc()
 
 def totalfee
   sum = 0

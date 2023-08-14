@@ -12,7 +12,7 @@ class Newspaper < Document
     rent_hour + 20000
   end
 
-  def print_info
+  def print
     super
     puts "#{price}"
     puts "#{day}"

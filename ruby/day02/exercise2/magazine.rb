@@ -13,7 +13,7 @@ class Magazine < Document
     super + 10000
   end
 
-  def print_info
+  def print
     super
     puts "#{issue}"
     puts "#{month}"

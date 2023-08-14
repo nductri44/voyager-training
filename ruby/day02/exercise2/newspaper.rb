@@ -9,7 +9,7 @@ class Newspaper < Document
   end
 
   def fee(rent_hour)
-    (super / @price) + 20000 
+    rent_hour + 20000
   end
 
   def print_info

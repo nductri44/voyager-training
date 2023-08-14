@@ -9,8 +9,7 @@ class Document
   end
 
   def fee(rent_hour)
-    fee = 0
-    fee += rent_hour * @price
+    price * rent_hour
   end
 
   def print_info
@@ -19,6 +18,5 @@ class Document
     puts "#{release}"
     puts "#{price}"
   end
-
 end
     

@@ -18,5 +18,4 @@ class Book < Document
     puts "#{author}"
     puts "#{page}"
   end
-
 end

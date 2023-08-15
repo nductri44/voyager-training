@@ -23,7 +23,7 @@ def totalfee
   $documents.each do |doc|
     sum += doc.fee(2)
   end
-    puts  "Tổng tiền phải trả là: #{sum}"
+    puts "Tổng tiền phải trả là: #{sum}"
 end 
 
 totalfee()

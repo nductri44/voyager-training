@@ -1,3 +1,4 @@
+# class for document example
 class Document
   attr_accessor :id, :publisher, :release, :price, :rent_hour
 
@@ -19,4 +20,3 @@ class Document
     puts "#{price}"
   end
 end
-    

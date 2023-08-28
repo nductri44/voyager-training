@@ -7,7 +7,7 @@ def linear_search(arr)
       i = index
     end
   end
-  return { min: min, i: i }
+  { min: min, i: i }
 end
 
 array = [1, 4, 2, 6, 8, 13, 10]

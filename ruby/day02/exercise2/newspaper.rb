@@ -1,5 +1,8 @@
-require './document.rb'
+# frozen_string_literal: true
 
+require './document'
+
+# ruby
 class Newspaper < Document
   attr_accessor :day
 
@@ -9,12 +12,12 @@ class Newspaper < Document
   end
 
   def fee(rent_hour)
-    rent_hour + 20000
+    rent_hour + 20_000
   end
 
   def print
     super
-    puts "#{price}"
-    puts "#{day}"
+    puts("#{price}")
+    puts("#{day}")
   end
 end

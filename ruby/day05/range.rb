@@ -16,7 +16,7 @@ puts "3. In ra tất cả các chữ cái từ 'a' đến 'z'"
 end
 puts
 puts
-puts '5.'
+puts '5. Kiểm tra xem một số có nằm trong một phạm vi hay không'
 range = (1..100)
 number_to_check = 42
 if range.include?(number_to_check)

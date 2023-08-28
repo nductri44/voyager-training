@@ -1,51 +1,51 @@
-def main()
-  puts "1. Dien tich tam giac"
-  puts "2. Dien tich hinh tron"
-  puts "3. Dien tich hinh chu nhat"
+# frozen_string_literal: true
 
-  puts "Lua chon:"
+# ruby
+def main
+  puts '1. Dien tich tam giac'
+  puts '2. Dien tich hinh tron'
+  puts '3. Dien tich hinh chu nhat'
+  puts 'Lua chon:'
   option = gets.chomp
-
   case option
-  when "1"
-    HinhTamGiac()
-  when "2"
-    HinhTron()
-  when "3"
-    HinhChuNhat()
+  when '1'
+    hinhtamgiac
+  when '2'
+    hinhtron
+  when '3'
+    hinhchunhat
   end
-
 end
 
-def HinhTamGiac()
+def hinhtamgiac
   puts
-  puts "Tinh dien tich tam giac:"
+  puts 'Tinh dien tich tam giac:'
   puts
-  puts "Nhap chieu cao:"
+  puts 'Nhap chieu cao:'
   a = gets.chomp.to_f
-  puts "Nhap canh day:"
+  puts 'Nhap canh day:'
   h = gets.chomp.to_f
-  puts "Dien tich: #{(0.5) * a * h}"
+  puts "Dien tich: #{0.5 * a * h}"
 end
 
-def HinhTron()
+def hinhtron
   puts
-  puts "Tinh dien tich hinh tron:"
+  puts 'Tinh dien tich hinh tron:'
   puts
-  puts "Nhap ban kinh:"
+  puts 'Nhap ban kinh:'
   r = gets.chomp.to_f
-  puts "Dien tich: #{(3.14) * r * r}"
+  puts "Dien tich: #{3.14 * r * r}"
 end
 
-def HinhChuNhat()
+def hinhchunhat
   puts
-  puts "Tinh dien tich hinh chu nhat:"
+  puts 'Tinh dien tich hinh chu nhat:'
   puts
-  puts "Nhap chieu dai:"
+  puts 'Nhap chieu dai:'
   a = gets.chomp.to_f
-  puts "Nhap canh rong:"
+  puts 'Nhap canh rong:'
   b = gets.chomp.to_f
   puts "Dien tich: #{a * b}"
 end
-  
-main()
+
+main

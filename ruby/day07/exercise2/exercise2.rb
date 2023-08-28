@@ -13,7 +13,7 @@ def binary_search(arr, target)
     end
   end
 
-  return -1
+  -1
 end
 
 sorted_array = [18, 15, 9, 8, 3, 1]

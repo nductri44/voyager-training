@@ -17,10 +17,10 @@ def binary_search(arr, target)
 end
 
 sorted_array = [18, 15, 9, 8, 3, 1]
-target = 18
+target = 2
 index = binary_search(sorted_array, target)
 if index == -1
-  puts "#{targer} not found in the array"
+  puts "#{target} not found in the array"
 else
   puts "#{target} found at index #{index}"
 end

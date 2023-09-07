@@ -10,6 +10,6 @@ def linear_search(arr)
   { min: min, i: i }
 end
 
-array = [1, 4, 2, 6, 8, 13, 10]
+array = [4, 2, 6, 8, 13, 10, 1]
 min_num = linear_search(array)
 puts "Minimum number of the array is #{min_num[:min]} at index #{min_num[:i]}"

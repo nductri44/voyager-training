@@ -1,5 +1,4 @@
 require './node'
-require 'debug'
 
 class BinaryTree
   attr_accessor :root
@@ -18,5 +17,11 @@ class BinaryTree
     else
       search(root.right, value)
     end
+  end
+
+  def insert(root, _value)
+    return unless root.nil?
+
+    Node.new
   end
 end

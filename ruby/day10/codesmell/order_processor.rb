@@ -24,13 +24,13 @@ class OrderProcessor
     total_price -= total_price * @customer.discount_percent if @customer.has_discount?
   end
 
-  private
-
   def check_quantity
     @items.each do |item|
       raise("Không đủ hàng trong kho cho #{item.name}") if item.not_available?
     end
   end
+
+  private
 
   def create_invoice(total_price)
     # Tạo hóa đơn và lưu vào cơ sở dữ liệu

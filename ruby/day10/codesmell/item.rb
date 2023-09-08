@@ -9,8 +9,8 @@ class Item
   end
 
   def check_quantity
-    @items.each do |item|
-      raise "Không đủ hàng trong kho cho #{item.name}" if items.available_quantity < item.quantity
+    @items.each do |_item|
+      raise("Không đủ hàng trong kho cho #{@name}") if @available_quantity < @quantity
     end
   end
 end

@@ -2,8 +2,8 @@ require 'csv'
 require 'json'
 
 file = File.read('exercise3.json')
-data_hash = JSON.parse(file)
+hash_data = JSON.parse(file)
 
-data_hash.each do |_key, value|
+hash_data.each do |_key, value|
   puts "Name: #{value['name']}, Salary: #{value['salary']}, Married: #{value['married']}"
 end

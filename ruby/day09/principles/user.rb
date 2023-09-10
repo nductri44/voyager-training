@@ -44,8 +44,8 @@ class User
   def print_account
     user = check_account
 
-    if user != nil
-      puts("Email: #{user[1]}, Name: #{user[3]}")
-    end
+    return if user.nil?
+
+    puts("Email: #{user[1]}, Name: #{user[3]}")
   end
 end

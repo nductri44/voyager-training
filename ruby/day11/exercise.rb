@@ -1,63 +1,60 @@
 class Shape
-  #In diện tích
+  # Prints the area.
   def get_area(area)
-    puts "Area = #{area}"
+    puts("Area = #{area}")
   end
 end
 
-class Rectangle
-  #Nhập vào chiều dài, chiều rộng và khởi tạo object của class Shape 
+class Rectangle < Shape
+  # Initializes a new object with the given length and width.
   def initialize(length, width)
     @length = length
     @width = width
-    @get_area = Shape.new
   end
 
-  #Tính diện tích hình chữ nhật
+  # Calculates the area of the rectangle.
   def calculate_area
     @length * @width
   end
 
-  #In diện tích
+  # Prints the area.
   def get_area
-    @get_area.get_area(calculate_area)
+    super(calculate_area)
   end
 end
 
-class Circle
-  #Nhập vào bán kính và khởi tạo object của class Shape 
+class Circle < Shape
+  # Initializes a new object with the given radius.
   def initialize(radius)
     @radius = radius
-    @get_area = Shape.new
   end
 
-  #Tính diện tích hình tròn
+  # Calculates the area of the circle.
   def calculate_area
-    Math::PI * @radius**2
+    Math::PI * (@radius**2)
   end
 
- #In diện tích
+  # Prints the area
   def get_area
-    @get_area.get_area(calculate_area)
+    super(calculate_area)
   end
 end
 
-class Triangle
-  #Nhập vào cạnh đáy, chiều cao và khởi tạo object của class Shape
+class Triangle < Shape
+  # Initializes a new object with the given base and height.
   def initialize(base, height)
     @base = base
     @height = height
-    @get_area = Shape.new
   end
 
-  #Tính diện tích hình tam giác
+  # Calculates the area of the triangle.
   def calculate_area
     0.5 * @base * @height
   end
 
-  #In diện tích
+  # Prints the area
   def get_area
-    @get_area.get_area(calculate_area)
+    super(calculate_area)
   end
 end
 

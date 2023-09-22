@@ -1,3 +1,6 @@
+-- Create School database
+
+CREATE DATABASE School;
 
 -- Create students & classes tables
 

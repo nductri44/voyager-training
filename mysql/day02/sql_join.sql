@@ -1,6 +1,6 @@
-Bai 1.
+-- Bai 1.
 
-a.
+-- a.
 
 CREATE TABLE STUDENT (
 	`id` BIGINT UNSIGNED NOT NULL
@@ -17,7 +17,7 @@ CREATE TABLE CLASS (
 	`major_id` INT
 );
 
-CREATE TABLE Stationery.MAJOR (
+CREATE TABLE MAJOR (
 	`id` BIGINT UNSIGNED NOT NULL
 	AUTO_INCREMENT UNIQUE,
 	`name` VARCHAR(100)
@@ -57,7 +57,7 @@ VALUES
 ('Civil Engineering');
 
 ------------------
-b.
+-- b.
 
 SELECT *
 FROM STUDENT
@@ -65,7 +65,7 @@ INNER JOIN CLASS
 ON STUDENT.class_id = CLASS.id;
 
 ------------------
-c.
+-- c.
 
 SELECT *
 FROM STUDENT
@@ -75,7 +75,7 @@ INNER JOIN MAJOR
 ON CLASS.major_id = MAJOR.id;
 
 ------------------
-d.
+-- d.
 
 SELECT *
 FROM CLASS
@@ -84,7 +84,7 @@ ON CLASS.id = STUDENT.class_id
 WHERE STUDENT.class_id IS NULL;
 
 ------------------
-e.
+-- e.
 
 SELECT * FROM CLASS
 INNER JOIN MAJOR
@@ -92,9 +92,9 @@ ON CLASS.major_id = MAJOR.id
 WHERE MAJOR.id = 3;
 
 ------------------
-Bai 1.7
+-- Bai 1.7
 
-a.
+-- a.
 
 SELECT *
 FROM CLASS
@@ -102,7 +102,7 @@ LEFT JOIN STUDENT
 ON CLASS.id = STUDENT.class_id 
 WHERE STUDENT.class_id IS NULL;
 
-b.
+-- b.
 
 SELECT *
 FROM STUDENT

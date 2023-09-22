@@ -8,7 +8,7 @@ class Item
     @available_quantity = available_quantity
   end
 
-  def price_each_quantity              
+  def price_each_quantity
     @price * @quantity
   end
 
